@@ -24,8 +24,6 @@ jobs:
         run: env | sort
       - name: Step Three - Print Date
         run: |
-              cat /etc/timezone
-              grep UTC /etc/default/rcS
               date
               # hardware clock
               sudo hwclock --show
