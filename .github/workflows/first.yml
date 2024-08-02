@@ -10,8 +10,7 @@ on:
       - feature/*
       - release/*
   pull_request:
-    branches:
-      - main  
+    branches: [ "main" ]
 
 jobs: 
   job1:
