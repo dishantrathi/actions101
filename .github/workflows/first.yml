@@ -52,7 +52,7 @@ jobs:
 
   job4:
     needs: [job1, job2, job3]
-    name: Third Job
+    name: Forth Job
     runs-on: ubuntu-latest
     steps:
       - name: Step One
