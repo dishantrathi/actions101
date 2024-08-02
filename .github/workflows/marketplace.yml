@@ -33,6 +33,6 @@ jobs:
       - name: install Py
         uses: "docker://python:3.9"
       - name: run script
-        run: "py 100daysofcode.py"
+        run: "python 100daysofcode.py"
 
       
