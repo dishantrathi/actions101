@@ -1,0 +1,20 @@
+ pwd
+  ls
+  bash ~/work/actions101/actions101/test.sh
+  shell: /usr/bin/bash -e {0}
+  env:
+    FILE_NAME: hello-server
+/home/runner/work/actions101/actions101
+100daysofcode.py
+README.md
+hello-server
+hello-server.go
+test.sh
+tomcat-users.xml
+chmod: cannot access './linux/hello-server': No such file or directory
+/home/runner/work/actions101/actions101/test.sh: line 3: ./linux/hello-server: No such file or directory
+Sat Aug  3 10:56:11 UTC 2024: 
+Sat Aug  3 10:56:11 UTC 2024: 
+Sat Aug  3 10:56:11 UTC 2024: 
+Sat Aug  3 10:56:11 UTC 2024: 
+Sat Aug  3 10:56:11 UTC 2024: 
