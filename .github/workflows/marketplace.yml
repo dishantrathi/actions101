@@ -23,16 +23,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout the code
+        uses: actions/checkout@v4
 
       - name: Python Syntax Checker
         # You may pin to the exact commit or the version.
         # uses: cclauss/Find-Python-syntax-errors-action@90f67be9fb626b675a3971b1d08ab29851cb721f
         uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
 
-      - name: install Py
+      - name: Install Python
         uses: "docker://python:3.9"
-      - name: run script
+      - name: Run Script
         run: "python 100daysofcode.py"
 
       
