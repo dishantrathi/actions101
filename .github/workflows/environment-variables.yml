@@ -26,6 +26,7 @@ jobs:
           echo "${{ env.JOB_ENVIRONMENT_VARIABLE }}"
           echo "${{ env.STEP_ENVIRONMENT_VARIABLE }} Not defined"
           echo "${{ env.OVER_RIDE }}"
+          echo "${{ secrets.PERSONALTOKEN }}"
   windows:
     env:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for windows'
@@ -48,3 +49,5 @@ jobs:
           echo "${{ env.JOB_ENVIRONMENT_VARIABLE }}"
           echo "${{ env.STEP_ENVIRONMENT_VARIABLE }} Not defined"
           echo "${{ env.OVER_RIDE }}"
+          echo "${{ secrets.PERSONALTOKEN }}"
+
