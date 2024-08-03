@@ -14,7 +14,7 @@ jobs:
         env:
           STEP_ENVIRONMENT_VARIABLE: 'custom step environment variable for bash'
           OVER_RIDE: 'Step'
-          TOKEN: ${{ dev.secrets.PERSONALTOKEN }} #env secret
+          TOKEN: ${{ secrets.PT }} #env secret
         run: |
           echo "Accessing environment variables in run command"
           echo "$WORKSPACE_ENVIRONMENT_VARIABLE"
