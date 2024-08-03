@@ -27,7 +27,7 @@ jobs:
           echo "${{ env.JOB_ENVIRONMENT_VARIABLE }}"
           echo "${{ env.STEP_ENVIRONMENT_VARIABLE }} Not defined"
           echo "${{ env.OVER_RIDE }}"
-          echo TOKEN | sed -e 's/\(.\)/\1 /g'
+          echo "${{ env.TOKEN }}"
 
   windows:
     env:
