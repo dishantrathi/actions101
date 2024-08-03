@@ -9,12 +9,13 @@ jobs:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for ubuntu'
       OVER_RIDE: 'Job'
     runs-on: ubuntu-latest
+    environment: dev ################# dev
     steps:
       - name: Print custom environment variables from ubuntu-latest
         env:
           STEP_ENVIRONMENT_VARIABLE: 'custom step environment variable for bash'
           OVER_RIDE: 'Step'
-          TOKEN: ${{ secrets.PT }} #env secret
+          TOKEN: ${{ secrets.PT }} # dev env secret
         run: |
           echo "Accessing environment variables in run command"
           echo "$WORKSPACE_ENVIRONMENT_VARIABLE"
