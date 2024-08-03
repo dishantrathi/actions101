@@ -48,6 +48,7 @@ jobs:
 
     - name: Test ${{ env.FILE_NAME }}
       run: |
+            pwd
             ls
             bash test.sh
 
