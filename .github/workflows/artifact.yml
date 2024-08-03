@@ -49,7 +49,7 @@ jobs:
     - name: Test ${{ env.FILE_NAME }}
       run: |
             ls
-            sudo chmod 777 ~/test.sh
+            sudo chmod 777 test.sh
             source ./test.sh
 
   test-windows:
@@ -69,4 +69,4 @@ jobs:
     - name: Test ${{ env.FILE_NAME }}
       run: |
             ls
-            ${{ env.FILE_NAME }}.exe
+            ./${{ env.FILE_NAME }}.exe
