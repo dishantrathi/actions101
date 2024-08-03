@@ -14,7 +14,7 @@ jobs:
         env:
           STEP_ENVIRONMENT_VARIABLE: 'custom step environment variable for bash'
           OVER_RIDE: 'Step'
-          TOKEN: ${{ secrets.PERSONALTOKEN }}
+          TOKEN: ${{ dev.secrets.PERSONALTOKEN }} #env secret
         run: |
           echo "Accessing environment variables in run command"
           echo "$WORKSPACE_ENVIRONMENT_VARIABLE"
@@ -33,7 +33,7 @@ jobs:
     env:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for windows'
       OVER_RIDE: 'Step'
-      TOKEN: ${{ secrets.PERSONALTOKEN }}
+      TOKEN: ${{ secrets.PERSONALTOKEN }} #repo secret
 
     runs-on: windows-latest
     steps:
