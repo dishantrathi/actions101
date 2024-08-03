@@ -49,7 +49,7 @@ jobs:
     - name: Test ${{ env.FILE_NAME }}
       run: |
             ls
-            source ./test.sh
+            source test.sh
 
   test-windows:
     name: Test Windows
