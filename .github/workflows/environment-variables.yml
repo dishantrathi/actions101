@@ -9,7 +9,7 @@ jobs:
       JOB_ENVIRONMENT_VARIABLE: 'custom job environment variable for ubuntu'
       OVER_RIDE: 'Job'
     runs-on: ubuntu-latest
-    environment: dev ################# dev
+    environment: dev ################# dev ref- https://www.youtube.com/watch?v=dPLPSaFqJmY
     steps:
       - name: Print custom environment variables from ubuntu-latest
         env:
