@@ -50,7 +50,7 @@ jobs:
       run: |
             pwd
             ls
-            bash ~/test.sh
+            bash ~/work/actions101/actions101/test.sh
 
   test-windows:
     name: Test Windows
